@@ -17,4 +17,4 @@ RUN install2.r --error \
     lattice \
     optimx \
     lme4 
-
+    
