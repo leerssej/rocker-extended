@@ -1,12 +1,15 @@
-install.packages("googlesheets")
-install.packages("cowplot")
-library(tidyverse)
-library(magrittr)
+# pull in non-tidyverse packages
+## db socket setup
+install.packages('keyringr')
+install.packages('RODBC')
+## flatfile socket setup
+install.packages('googlesheets')
+
+# load libraries
+library(keyringr)
+library(RODBC)
 library(googlesheets)
-library(lubridate)
 library(readxl)
-library(stringr)
-library(broom)
-library(viridis)
-library(cowplot)
-library(remotes)
+library(magrittr)
+library(lubridate)
+library(tidyverse)
